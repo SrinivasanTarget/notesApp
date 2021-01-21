@@ -15,7 +15,8 @@
     "run:ios": "ionic capacitor run ios",
     "run:android": "ionic capacitor run android",
     "live:ios": "ionic capacitor run ios --livereload --external",
-    "live:android": "ionic capacitor run android --livereload --external"
+    "live:android": "ionic capacitor run android --livereload --external",
+    "build:ios-sim": "xcodebuild -workspace ios/App/App.xcworkspace -scheme 'App' archive -archivePath build/App.xcarchive -sdk iphonesimulator"
   },
   "private": true,
   "dependencies": {
@@ -45,6 +46,7 @@
     "@capacitor/cli": "2.4.6",
     "@ionic/angular-toolkit": "^2.3.0",
     "@testing-library/angular": "^10.3.1",
+    "@ionic/pwa-elements": "^3.0.2",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/jest": "^26.0.20",
